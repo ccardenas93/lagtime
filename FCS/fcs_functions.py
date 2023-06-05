@@ -289,7 +289,11 @@ def fit_RF(X_train, X_test, y_train, y_test):
    #                    verbose=1, warm_start=False)
 
    # ## calibrated for radar raiffall2
+<<<<<<< HEAD
     RF = RandomForestRegressor(bootstrap=True, criterion='squared_error', max_depth=70,
+=======
+    RF = RandomForestRegressor(bootstrap=True, criterion = 'squared_error' max_depth=70,
+>>>>>>> 9093a89007056776313508ce08a25bec75742525
                        max_features=4, max_leaf_nodes=None,
                        min_impurity_decrease=0.0, 
                        min_samples_leaf=5, min_samples_split=14,
