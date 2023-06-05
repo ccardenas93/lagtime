@@ -253,11 +253,11 @@ def fit_RF(X_train, X_test, y_train, y_test):
     #                           bootstrap=True, n_jobs=-1, verbose = 1)
     
     ## best forl all
-    # RF = RandomForestRegressor(n_estimators=300,  max_depth = 80, 
-    #                             min_samples_split=12, min_samples_leaf=5,max_features=3,
-    #                             bootstrap=True, n_jobs=-1, verbose = 1)
-    # {'bootstrap': True, 'max_depth': 80, 'max_features': 3, 'min_samples_leaf': 5, 
-    #  'min_samples_split': 12, 'n_estimators': 300}
+    RF = RandomForestRegressor(n_estimators=300,  max_depth = 80, 
+                                min_samples_split=12, min_samples_leaf=5,max_features=3,
+                                bootstrap=True, n_jobs=-1, verbose = 1)
+    {'bootstrap': True, 'max_depth': 80, 'max_features': 3, 'min_samples_leaf': 5, 
+      'min_samples_split': 12, 'n_estimators': 300}
     
     ## for U11
     # RF = RandomForestRegressor(n_estimators=1000,  max_depth = 80, 
@@ -289,17 +289,17 @@ def fit_RF(X_train, X_test, y_train, y_test):
    #                    verbose=1, warm_start=False)
 
    # ## calibrated for radar raiffall2
-<<<<<<< HEAD
-    RF = RandomForestRegressor(bootstrap=True, criterion='squared_error', max_depth=70,
-=======
-    RF = RandomForestRegressor(bootstrap=True, criterion = 'squared_error' max_depth=70,
->>>>>>> 9093a89007056776313508ce08a25bec75742525
-                       max_features=4, max_leaf_nodes=None,
-                       min_impurity_decrease=0.0, 
-                       min_samples_leaf=5, min_samples_split=14,
-                       min_weight_fraction_leaf=0.0, n_estimators=200,
-                       n_jobs=-1, oob_score=False, random_state=None,
-                       verbose=1, warm_start=False)
+# <<<<<<< HEAD
+#     RF = RandomForestRegressor(bootstrap=True, criterion='squared_error', max_depth=70,
+# =======
+#     RF = RandomForestRegressor(bootstrap=True, criterion = 'squared_error' max_depth=70,
+# >>>>>>> 9093a89007056776313508ce08a25bec75742525
+#                        max_features=4, max_leaf_nodes=None,
+#                        min_impurity_decrease=0.0, 
+#                        min_samples_leaf=5, min_samples_split=14,
+#                        min_weight_fraction_leaf=0.0, n_estimators=200,
+#                        n_jobs=-1, oob_score=False, random_state=None,
+#                        verbose=1, warm_start=False)
 
 #    
     RF.fit(X_train,y_train)
